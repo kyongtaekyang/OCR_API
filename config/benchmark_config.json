@@ -1,0 +1,14 @@
+{
+  "ollama_base_url": "http://localhost:11434",
+  "generate_endpoint": "/api/generate",
+  "tags_endpoint": "/api/tags",
+  "temperature": 0,
+  "timeout_seconds": 300,
+  "max_retries": 1,
+  "save_raw_output": true,
+  "save_parsed_output": true,
+  "max_response_chars": 200000,
+  "strict_json_only": true,
+  "validate_score_math": true,
+  "detect_score_anomalies": true
+}

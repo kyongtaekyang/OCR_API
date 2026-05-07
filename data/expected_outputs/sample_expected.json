@@ -1,0 +1,71 @@
+{
+  "metadata": {
+    "course_type": "keystone",
+    "class": "B2",
+    "title": "My Favorite Season",
+    "title_corrected": "My Favorite Season",
+    "topic": "seasons",
+    "topic_corrected": "seasons",
+    "writing_type": "paragraph"
+  },
+  "original_writing": "My favorite season is [S]autum. I like it [G]because the weather are cool and the leaves [V]change to beautiful colors. Every year I [O]with my family go to the park.",
+  "corrected_writing": "My favorite season is autumn. I like it because the weather is cool and the leaves change to beautiful colors. Every year I go to the park with my family.",
+  "scoring_analysis": {
+    "grammar": {
+      "sentence_accuracy": {"score": 8, "max_score": 10, "comment": "One subject-verb agreement error."},
+      "verb_tense_consistency": {"score": 9, "max_score": 10, "comment": "Tense is consistent."},
+      "article_preposition": {"score": 9, "max_score": 10, "comment": "Prepositions used correctly."},
+      "subtotal": {"score": 26, "max_score": 30}
+    },
+    "vocabulary": {
+      "word_variety": {"score": 8, "max_score": 10, "comment": "Good vocabulary range."},
+      "appropriateness": {"score": 9, "max_score": 10, "comment": "Words are appropriate."},
+      "expression_naturalness": {"score": 8, "max_score": 10, "comment": "Natural expressions used."},
+      "subtotal": {"score": 25, "max_score": 30}
+    },
+    "writing_flow": {
+      "structure_organization": {"score": 13, "max_score": 15, "comment": "Clear paragraph structure."},
+      "sentence_variety": {"score": 8, "max_score": 10, "comment": "Some sentence variety."},
+      "coherence_transitions": {"score": 12, "max_score": 15, "comment": "Good transitions."},
+      "subtotal": {"score": 33, "max_score": 40}
+    }
+  },
+  "writing_performance": {
+    "grammar": {"score": 26, "percentage": "86.7%"},
+    "vocabulary": {"score": 25, "percentage": "83.3%"},
+    "writing_flow": {"score": 33, "percentage": "82.5%"},
+    "total_score": {"score": 83.7, "percentage": "83.7%"}
+  },
+  "error_explanations": [
+    {
+      "error": "autum",
+      "explanation_en": "Spelling error. The correct spelling is 'autumn'.",
+      "explanation": "철자 오류입니다. 올바른 철자는 'autumn'입니다."
+    },
+    {
+      "error": "are",
+      "explanation_en": "Grammar error. 'The weather' is singular, so the verb should be 'is'.",
+      "explanation": "문법 오류입니다. 'the weather'는 단수이므로 동사는 'is'여야 합니다."
+    },
+    {
+      "error": "change",
+      "explanation_en": "Vocabulary suggestion. 'Turn' is more natural in this context.",
+      "explanation": "어휘 제안입니다. 이 맥락에서는 'turn'이 더 자연스럽습니다."
+    },
+    {
+      "error": "with my family go",
+      "explanation_en": "Word order error. The correct order is 'go to the park with my family'.",
+      "explanation": "어순 오류입니다. 올바른 어순은 'go to the park with my family'입니다."
+    }
+  ],
+  "error_analysis": {
+    "grammar": 1,
+    "vocabulary": 1,
+    "word_order": 1,
+    "punctuation": 0,
+    "spelling": 1,
+    "coherence": 0,
+    "total_errors": 4
+  },
+  "overall_comments": "The student demonstrates a good understanding of paragraph structure and uses appropriate vocabulary. Focus on spelling accuracy and subject-verb agreement to further improve writing quality."
+}

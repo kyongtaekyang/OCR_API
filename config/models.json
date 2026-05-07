@@ -1,0 +1,60 @@
+{
+  "models": [
+    {
+      "name": "qwen2",
+      "provider": "ollama_local",
+      "ollama_model": "qwen2.5vl:latest",
+      "enabled": true,
+      "endpoint_env": "QWEN2_INFERENCE_ENDPOINT",
+      "api_key_env": "QWEN2_API_KEY",
+      "model_storage": {
+        "storage_provider": "s3",
+        "bucket_env": "MODEL_ARTIFACT_BUCKET",
+        "key": "ollama/qwen2.5vl/latest/",
+        "region_env": "AWS_REGION",
+        "source_local_model": "qwen2.5vl:latest",
+        "runtime": "ollama"
+      },
+      "timeout_seconds": 900,
+      "max_retries": 0,
+      "prompt_mode": "compact",
+      "format": "json",
+      "options": {
+        "temperature": 0,
+        "num_predict": 2048,
+        "num_ctx": 4096,
+        "keep_alive": "0s"
+      },
+      "operational_profile": "large_vlm_single_long_attempt",
+      "deployment_recommendation": "Use compact prompt mode with JSON format forcing to reduce truncated or fenced responses."
+    },
+    {
+      "name": "gemma",
+      "provider": "ollama_local",
+      "ollama_model": "gemma4:latest",
+      "enabled": true,
+      "endpoint_env": "GEMMA_INFERENCE_ENDPOINT",
+      "api_key_env": "GEMMA_API_KEY",
+      "model_storage": {
+        "storage_provider": "s3",
+        "bucket_env": "MODEL_ARTIFACT_BUCKET",
+        "key": "ollama/gemma4/latest/",
+        "region_env": "AWS_REGION",
+        "source_local_model": "gemma4:latest",
+        "runtime": "ollama"
+      },
+      "timeout_seconds": 300,
+      "max_retries": 1,
+      "prompt_mode": "full",
+      "format": "json",
+      "options": {
+        "temperature": 0,
+        "num_predict": 2048,
+        "num_ctx": 4096,
+        "keep_alive": "0s"
+      },
+      "operational_profile": "current_api_candidate",
+      "deployment_recommendation": "Proceed as the current API/AWS candidate unless qwen2.5vl improves after retest."
+    }
+  ]
+}

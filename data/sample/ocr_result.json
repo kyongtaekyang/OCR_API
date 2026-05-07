@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "class": "not provided",
+    "level": "not provided",
+    "title": "Sample Writing",
+    "topic": "My weekend",
+    "writing_type": "paragraph"
+  },
+  "handwritten_text": "I goed to park with my friend.",
+  "lines": [
+    {
+      "line_no": 1,
+      "text": "I goed to park with my friend.",
+      "confidence": 0.95
+    }
+  ],
+  "source": {
+    "type": "json",
+    "filename": "ocr_result.json",
+    "ocr_engine": "manual"
+  }
+}

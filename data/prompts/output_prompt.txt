@@ -1,0 +1,72 @@
+Always format your evaluation as a JSON object with the following structure.
+Return only the JSON object. Do not include any explanation, markdown, or code fences outside the JSON.
+
+{
+  "metadata": {
+    "class": "class name or not provided",
+    "title": "original title text",
+    "topic": "original topic text",
+    "writing_type": "paragraph|essay|letter|not provided"
+  },
+  "original_writing": "student's original text with error tags [G][V][O][P][S][C]",
+  "corrected_writing": "corrected version of student's text",
+  "scoring_analysis": {
+    "grammar": {
+      "sentence_accuracy": {"score": 8, "max_score": 10, "comment": "Most sentences are grammatically correct."},
+      "verb_tense_consistency": {"score": 7, "max_score": 10, "comment": "Minor tense inconsistencies."},
+      "subject_verb_agreement": {"score": 8, "max_score": 10, "comment": "Good agreement overall."},
+      "articles_prepositions": {"score": 7, "max_score": 10, "comment": "Some article errors."},
+      "word_order": {"score": 8, "max_score": 10, "comment": "Natural word order."},
+      "punctuation_capitalization": {"score": 7, "max_score": 10, "comment": "Minor punctuation issues."},
+      "subtotal": {"score": 45, "max_score": 60}
+    },
+    "vocabulary": {
+      "range_of_vocabulary": {"score": 7, "max_score": 10, "comment": "Adequate range."},
+      "word_choice_appropriateness": {"score": 8, "max_score": 10, "comment": "Generally appropriate."},
+      "collocation_use": {"score": 6, "max_score": 10, "comment": "Some collocation errors."},
+      "academic_vocabulary": {"score": 6, "max_score": 10, "comment": "Limited academic vocabulary."},
+      "repetition_avoidance": {"score": 7, "max_score": 10, "comment": "Some repetition."},
+      "idiomatic_expressions": {"score": 5, "max_score": 10, "comment": "Limited idiom use."},
+      "register_tone": {"score": 7, "max_score": 10, "comment": "Appropriate register."},
+      "spelling_accuracy": {"score": 8, "max_score": 10, "comment": "Few spelling errors."},
+      "subtotal": {"score": 54, "max_score": 80}
+    },
+    "writing_flow": {
+      "organization_coherence": {"score": 7, "max_score": 10, "comment": "Clear organization."},
+      "paragraph_unity": {"score": 7, "max_score": 10, "comment": "Mostly unified paragraphs."},
+      "transition_cohesion": {"score": 6, "max_score": 10, "comment": "Some transitions missing."},
+      "intro_conclusion_effectiveness": {"score": 6, "max_score": 10, "comment": "Introduction adequate."},
+      "supporting_evidence_examples": {"score": 6, "max_score": 10, "comment": "Examples could be stronger."},
+      "format_consistency": {"score": 7, "max_score": 10, "comment": "Consistent formatting."},
+      "subtotal": {"score": 39, "max_score": 60}
+    }
+  },
+  "writing_performance": {
+    "grammar": {"score": 45, "percentage": "75%"},
+    "vocabulary": {"score": 54, "percentage": "67.5%"},
+    "writing_flow": {"score": 39, "percentage": "65%"},
+    "total_score": {"score": 68, "percentage": "68%"}
+  },
+  "error_explanations": [
+    {
+      "error": "example error word",
+      "explanation_en": "This word is misspelled. The correct spelling is ...",
+      "explanation": "이 단어의 철자가 틀렸습니다. 올바른 철자는 ...입니다."
+    }
+  ],
+  "error_analysis": {
+    "grammar": 2,
+    "vocabulary": 1,
+    "word_order": 0,
+    "punctuation": 1,
+    "spelling": 1,
+    "coherence": 0,
+    "total_errors": 5
+  },
+  "overall_comments": "The student demonstrates a reasonable command of English writing. Grammar is generally accurate with some room for improvement in verb tense consistency. Focus on expanding vocabulary range and strengthening paragraph transitions."
+}
+
+NOTE: The example scores above are for structural reference only.
+Actual scores must be mathematically consistent: subtotals must equal the sum of sub-scores.
+Do not output scores where score exceeds max_score.
+Percentages must be computed as (score / max_score) * 100.
