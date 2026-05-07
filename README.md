@@ -1,4 +1,6 @@
-# Writing Image Benchmark System
+# OCR_API
+
+Writing Image Benchmark System
 
 AI-based benchmark system comparing `qwen2.5vl:latest` and `gemma4:latest` on EFL student writing image evaluation tasks.
 
